@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/sakana-docs/',
   head: [['link', { rel: 'icon', href: '/gaituba.com_crop-round.jpg' }]],
   title: 'Sakana-Docs', //标题
   description: 'Sakana-Docs', //描述
