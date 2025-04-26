@@ -53,7 +53,7 @@ yarn vitepress init
 - 第五个是是否使用 Ts，我不是很会所以我选择 NO
 - 第六个是否要将 VitePress 的命令添加到 package.json 文件中，选 YES，方便一点
 
-![image](./vitepress-init.png)
+![image](/vitepress-init.png)
 
 - `.vitepress`，最核心的目录
 - `theme` 目录，自定义主题配置，css 样式等
@@ -63,7 +63,7 @@ yarn vitepress init
 - `index.md` 主页相关
 - `package.json` 和 `pnpm-lock.yml` 包管理工具需要用的
 
-![image](./vitepress-project.png)
+![image](/vitepress-project.png)
 
 ### 启动项目
 
@@ -85,7 +85,7 @@ yarn docs:dev
 
 看到这样就说明启动成功了
 
-![image](./vitepress-run.png)
+![image](/vitepress-run.png)
 
 ## 自定义配置
 
@@ -93,7 +93,7 @@ yarn docs:dev
 
 以下就是要美化的东西
 
-![image](./vitepress-home.png)
+![image](/vitepress-home.png)
 
 首先是第 1、7、8 处
 
@@ -179,7 +179,7 @@ features:
 
 下面是最终效果图
 
-![image](./vitepress-01.png)
+![image](/vitepress-01.png)
 
 注意：vitepress 支持的图标较少，社交连接的图标可以参考这个网站 https://www.iconfont.cn/
 
@@ -236,7 +236,7 @@ socialLinks: [
 
 左边是 sidebar 的配置，右边是显示的文章目录（默认显示一二级）。
 
-![image](./vitepress-02.png)
+![image](/vitepress-02.png)
 
 简单说一下配置
 
@@ -265,13 +265,13 @@ sidebar: [
 
 下面是修改后的效果图
 
-![image](./vitepress-03.png)
+![image](/vitepress-03.png)
 
 ### 美化网址图标
 
 现在网址的图标是这样的
 
-![image](./vitepress-04.png)
+![image](/vitepress-04.png)
 
 ::: code-group
 
@@ -285,7 +285,7 @@ sidebar: [
 
 修改后效果图
 
-![image](./vitepress-05.png)
+![image](/vitepress-05.png)
 
 ### 设置搜索框
 
@@ -479,7 +479,7 @@ git push -u origin main //-u 是设置默认分支，main 是分支名称
 
 你也可以选择从分支部署或使用混和部署，但是需要自己设置
 
-![image](./GitHubPages.png)
+![image](/GitHubPages.png)
 
 之后等待工作流运行完成，就可以访问了
 
