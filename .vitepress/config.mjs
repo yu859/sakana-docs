@@ -1,11 +1,26 @@
 import { defineConfig } from 'vitepress';
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from 'vitepress-plugin-group-icons';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/sakana-docs/',
-  head: [['link', { rel: 'icon', href: '/gaituba.com_crop-round.jpg' }]],
+  base: '/sakana-docs/', //这里一定要记得写，不然样式会出问题，然后写上自己的仓库名
+  head: [
+    ['link', { rel: 'icon', href: '/sakana-docs/gaituba.com_crop-round.jpg' }], //浏览器图标，记得写前面那个仓库名
+  ],
   title: 'Sakana-Docs', //标题
   description: 'Sakana-Docs', //描述
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin);
+    },
+  },
+
+  vite: {
+    plugins: [groupIconVitePlugin()],
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outlineTitle: '目录', //目录标题
@@ -14,7 +29,7 @@ export default defineConfig({
     nav: [
       //导航栏
       { text: '首页', link: '/' },
-      { text: '文档', link: '/markdown-examples' },
+      { text: '文档', link: '/vitepress搭建并部署' },
     ],
 
     search: {
@@ -43,16 +58,15 @@ export default defineConfig({
       //侧边栏
       {
         text: '文档',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-        ],
+        items: [{ text: 'vitepress搭建并部署', link: '/vitepress搭建并部署' }],
       },
     ],
     // sidebar: false, //侧边栏
     // aside: 'left', //侧边栏位置
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/yu859' }], //社交链接
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/yu859/sakana-docs' },
+    ], //社交链接
 
     footer: {
       //底部

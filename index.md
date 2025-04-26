@@ -12,13 +12,16 @@ hero:
   actions:
     - theme: brand
       text: 开始使用
-      link: /markdown-examples
+      link: /vitepress搭建并部署
 
 features:
-  - title: 💡 建议
+  - icon: 💡
+    title: 建议
     details: 选择永远大于努力
-  - title: 💪 努力
+  - icon: 💪
+    title: 努力
     details: 要做一件事就努力做好
-  - title: 🤔 思考
+  - icon: 🤔
+    title: 思考
     details: 让自己静下心来思考
 ---
